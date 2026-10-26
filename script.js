@@ -1,6 +1,6 @@
 // GANTI nomor di bawah dengan nomor WhatsApp usaha kamu, gunakan kode negara tanpa tanda +.
 // Contoh Indonesia: 6281234567890
-const WHATSAPP_NUMBER = "6281234567890";
+const WHATSAPP_NUMBER =  "6281234567890";
 
 const productSelect = document.getElementById("product");
 const quantityInput = document.getElementById("quantity");
