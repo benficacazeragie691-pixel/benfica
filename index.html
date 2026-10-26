@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kaos berkualitas untuk gaya sehari-hari. Pilih produk, tentukan jumlah, dan pesan melalui WhatsApp.">
+  <title>KAOSKU — Kaos untuk Cerita Kamu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="KAOSKU Beranda"><span class="brand-mark">K</span> KAOSKU<span class="brand-dot">.</span></a>
+    <nav aria-label="Menu utama">
+      <a href="#katalog">Katalog</a>
+      <a href="#pesanan">Pesanan</a>
+      <a href="#testimoni">Testimoni</a>
+    </nav>
+    <a class="header-cta" href="#pesanan">Pesan sekarang <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> EVERYDAY ESSENTIALS</p>
+        <h1>Kaos nyaman.<br><em>Gaya tanpa batas.</em></h1>
+        <p class="hero-description">Temukan kaos favorit untuk menemani cerita, aktivitas, dan gaya kamu setiap hari.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#katalog">Lihat katalog <span>↓</span></a>
+          <a class="text-link" href="#pesanan">Cara pesan <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span><strong>Dibuat untuk dipakai berulang.</strong><br>Simple, nyaman, dan mudah dipadukan.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-sun"></div>
+        <div class="art-label label-top">NEW DAILY<br>UNIFORM</div>
+        <img src="assets/hero-shirts.svg" alt="Ilustrasi mockup kaos warna krem, hitam, dan hijau" class="shirt-art">
+        <div class="art-sticker">GOOD<br>MOOD<br>ONLY <span>✳</span></div>
+        <div class="art-caption">BASIC COLLECTION / 001</div>
+      </div>
+      <div class="hero-bottom"><span>DESIGNED FOR EVERYDAY</span><span>EST. 2026</span><span>MADE TO BE YOURS ↘</span></div>
+    </section>
+
+    <section class="section catalog-section" id="katalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / PILIH FAVORITMU</p><h2>Katalog <em>produk.</em></h2></div>
+        <p class="section-intro">Temukan potongan yang pas untuk gaya kamu. Pilih produk untuk mengisi detail pesanan.</p>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-product="Kaos Essential Cream" data-price="85000">
+          <div class="product-visual visual-cream"><span class="product-tag">BEST SELLER</span><img src="assets/shirt-cream.svg" alt="Mockup kaos warna krem"></div>
+          <div class="product-meta"><div><h3>Kaos Essential Cream</h3><p>Regular fit · Cotton feel</p></div><strong>Rp85.000</strong></div>
+          <button class="select-product" type="button">Pilih produk <span>↗</span></button>
+        </article>
+        <article class="product-card" data-product="Kaos Midnight Black" data-price="89000">
+          <div class="product-visual visual-black"><span class="product-tag">TIMELESS</span><img src="assets/shirt-black.svg" alt="Mockup kaos warna hitam"></div>
+          <div class="product-meta"><div><h3>Kaos Midnight Black</h3><p>Regular fit · Easy to style</p></div><strong>Rp89.000</strong></div>
+          <button class="select-product" type="button">Pilih produk <span>↗</span></button>
+        </article>
+        <article class="product-card" data-product="Kaos Sage Green" data-price="89000">
+          <div class="product-visual visual-green"><span class="product-tag">NEW COLOR</span><img src="assets/shirt-green.svg" alt="Mockup kaos warna hijau sage"></div>
+          <div class="product-meta"><div><h3>Kaos Sage Green</h3><p>Relaxed fit · Soft tone</p></div><strong>Rp89.000</strong></div>
+          <button class="select-product" type="button">Pilih produk <span>↗</span></button>
+        </article>
+      </div>
+      <p class="catalog-note">*Nama produk, harga, warna, dan gambar di atas adalah contoh. Sesuaikan dengan produk asli usaha kamu.</p>
+    </section>
+
+    <section class="order-section" id="pesanan">
+      <div class="order-copy"><p class="eyebrow">02 / ORDER MADE EASY</p><h2>Siap jadi<br><em>kaos favoritmu?</em></h2><p>Isi detail di samping, lalu lanjutkan pesanan lewat WhatsApp. Kami akan membantu konfirmasi ukuran, stok, dan pengiriman.</p><div class="order-steps"><span>01 <b>Pilih produk</b></span><span>02 <b>Isi detail</b></span><span>03 <b>Kirim WhatsApp</b></span></div></div>
+      <form class="order-panel" id="order-form">
+        <div class="panel-heading"><div><p class="eyebrow">ORDER FORM</p><h3>Detail pesanan</h3></div><span class="panel-number">#001</span></div>
+        <label for="product">Produk</label>
+        <select id="product" name="product" required>
+          <option value="Kaos Essential Cream" data-price="85000">Kaos Essential Cream — Rp85.000</option>
+          <option value="Kaos Midnight Black" data-price="89000">Kaos Midnight Black — Rp89.000</option>
+          <option value="Kaos Sage Green" data-price="89000">Kaos Sage Green — Rp89.000</option>
+        </select>
+        <div class="form-row">
+          <div><label for="size">Ukuran</label><select id="size" name="size" required><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select></div>
+          <div><label for="quantity">Jumlah</label><div class="quantity-control"><button type="button" id="minus" aria-label="Kurangi jumlah">−</button><input id="quantity" name="quantity" type="number" min="1" max="99" value="1" required><button type="button" id="plus" aria-label="Tambah jumlah">+</button></div></div>
+        </div>
+        <label for="customer">Nama pemesan</label><input id="customer" name="customer" placeholder="Nama kamu" required>
+        <label for="notes">Catatan (opsional)</label><textarea id="notes" name="notes" rows="2" placeholder="Warna, alamat, atau permintaan khusus..."></textarea>
+        <div class="total-line"><span>Estimasi total</span><strong id="total">Rp85.000</strong></div>
+        <button class="button button-dark submit-button" type="submit">Pesan sekarang via WhatsApp <span>↗</span></button>
+        <p class="form-disclaimer">Pesanan belum final sampai dikonfirmasi oleh admin.</p>
+      </form>
+    </section>
+
+    <section class="section testimonial-section" id="testimoni">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / CERITA MEREKA</p><h2>Kata mereka, <em>bukan kata kami.</em></h2></div>
+        <p class="section-intro">Pengalaman pelanggan adalah bagian penting dari cerita kami.</p>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial"><div class="quote-mark">“</div><p>Bahannya terasa nyaman dan modelnya simpel. Gampang banget dipadukan sama outfit lain.</p><div class="reviewer"><span class="avatar">AR</span><div><strong>Andi R.</strong><span>Pelanggan · Essential Cream</span></div><span class="stars">★★★★★</span></div></article>
+        <article class="testimonial featured-review"><div class="quote-mark">“</div><p>Warnanya sesuai foto dan potongannya enak dipakai buat aktivitas sehari-hari.</p><div class="reviewer"><span class="avatar">NP</span><div><strong>Nadia P.</strong><span>Pelanggan · Midnight Black</span></div><span class="stars">★★★★★</span></div></article>
+        <article class="testimonial"><div class="quote-mark">“</div><p>Proses pesan mudah, admin juga membantu menjelaskan ukuran sebelum checkout.</p><div class="reviewer"><span class="avatar">DF</span><div><strong>Dimas F.</strong><span>Pelanggan · Sage Green</span></div><span class="stars">★★★★★</span></div></article>
+      </div>
+      <p class="catalog-note">*Testimoni di atas adalah contoh tampilan. Ganti dengan ulasan asli pelanggan sebelum dipublikasikan.</p>
+    </section>
+
+    <section class="closing-cta"><p class="eyebrow">YOUR STYLE STARTS HERE</p><h2>Temukan kaos yang<br><em>cerita tentang kamu.</em></h2><a class="button button-light" href="#katalog">Jelajahi katalog <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#beranda"><span class="brand-mark">K</span> KAOSKU<span class="brand-dot">.</span></a><p>Kaos untuk cerita kamu.</p><span>© 2026 KAOSKU. GANTI DENGAN NAMA USAHAMU.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
